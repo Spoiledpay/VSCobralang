@@ -1,0 +1,25 @@
+{
+    "name": "cobralang",
+    "displayName": "CobraLang",
+    "description": "Language support for the Cobra programming language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.54.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cobra",
+            "aliases": ["Cobra", "cobra"],
+            "extensions": [".cobra"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cobra",
+            "scopeName": "source.cobra",
+            "path": "./syntaxes/cobra.tmLanguage.json"
+        }]
+    }
+}
